@@ -54,6 +54,3 @@ def get_countries_data() -> list:
         })
 
     return countries
-
-print(get_countries_data())
-
