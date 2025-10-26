@@ -8,7 +8,7 @@ def get_exchange_rates() -> dict:
         data = requests.get(EXCHANGE_DATA_URL).json()
         return data["rates"]
     except Exception as e:
-        return e
+        return "error fetching"
     
 exchange_rates = get_exchange_rates()
     
@@ -17,7 +17,7 @@ def get_countries_data() -> list:
     try:
         data = requests.get(COUNTRIES_DATA_URL).json()
     except Exception as e:
-        return e
+        return "error fetching"
     
     for country in data:
 
