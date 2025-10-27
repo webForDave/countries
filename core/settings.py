@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
+        default='postgresql://postgres:nSqweNSlmHnnednVpWEESzbQsJXxYwaS@nozomi.proxy.rlwy.net:24245/railway',
         conn_max_age=600
     )
 }
